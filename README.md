@@ -8,9 +8,9 @@ A modern, Bengali-first showroom web application built with **Next.js (App Route
 
 ## 🌟 Key Features
 
-- **Bengali-First Regional Design**: Native Bengali typography using *Hind Siliguri* paired with modern English sans-serif *Plus Jakarta Sans*.
-- **Authentic Local Retail Experience**: Natural Bengali retail phrasing (*শোরুম*, *সহজ কিস্তি*, *ডেলিভারি*, *আসল ব্র্যান্ড ওয়ারেন্টি*) without awkward machine translation.
-- **Bilingual Architecture**: Seamless routing between Bengali (default `/`) and English mirror (`/en/*`) across all 58 static pre-rendered routes.
+- **Default English with Bengali Option**: Clean, modern English showroom pages by default on the root domain (`/`, `/products`, etc.) with full Bengali regional experience available at `/bn/*` and switchable instantly via the header toggle.
+- **Authentic Local Retail Experience**: Natural Bengali retail phrasing (*শোরুম*, *সহজ কিস্তি*, *ডেলিভারি*, *আসল ব্র্যান্ড ওয়ারেন্টি*) alongside crisp English showroom copy.
+- **Bilingual Architecture**: Seamless routing between English (default `/`) and Bengali (`/bn/*`) across all 58 static pre-rendered routes.
 - **Direct WhatsApp Conversion Funnel**: Every product card and detail page features one-tap WhatsApp inquiries pre-filled with product title, model code, and source tracking.
 - **Interactive EMI Calculator**: Real-time monthly installment calculator for zero down payment & low-interest consumer finance schemes (Bajaj Finserv, HDB, IDFC, TVS Credit).
 - **Festival & Campaign Engine**: Dynamic promotional banners for festive shopping events (Durga Puja, Bengali New Year, Summer AC sales).
