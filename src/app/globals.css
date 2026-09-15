@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Noto+Sans+Bengali:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-navy: #082567;
+  --primary-blue: #1152D4;
+  --accent-red: #D31027;
+  --whatsapp: #25D366;
+  --festival-gold: #F59E0B;
+}
+
+/* Base body typography prioritizing proper Bengali font rendering */
+body {
+  font-family: 'Hind Siliguri', 'Noto Sans Bengali', 'Kohinoor Bangla', 'Bangla Sangam MN', 'Bangla MN', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  color: #1e293b;
+  background-color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "kern" 1, "liga" 1;
+}
+
+/* Explicit class for Bengali text */
+.font-bengali,
+[lang="bn"],
+html[lang="bn"] {
+  font-family: 'Hind Siliguri', 'Noto Sans Bengali', 'Kohinoor Bangla', 'Bangla Sangam MN', 'Bangla MN', system-ui, -apple-system, sans-serif;
+  text-rendering: optimizeLegibility;
+}
+
+/* Explicit class for English text */
+.font-sans,
+[lang="en"],
+html[lang="en"] {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Safe area for mobile sticky bottom */
+.safe-area-bottom {
+  padding-bottom: max(0.5rem, env(safe-area-inset-bottom));
+}
