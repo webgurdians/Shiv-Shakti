@@ -4,7 +4,7 @@ import { Metadata } from 'next';
 import { ProductDetailView } from '@/components/ProductDetailView';
 import { products } from '@/data/products';
 
-interface EnglishProductPageProps {
+interface ProductPageProps {
   params: Promise<{
     slug: string;
   }>;
@@ -16,16 +16,16 @@ export async function generateStaticParams() {
   }));
 }
 
-export async function generateMetadata({ params }: EnglishProductPageProps): Promise<Metadata> {
+export async function generateMetadata({ params }: ProductPageProps): Promise<Metadata> {
   const { slug } = await params;
   const product = products.find((p) => p.slug === slug);
   if (!product) return {};
 
   return {
-    title: `${product.name.en} in Cooper's Camp | Shiv Shakti Electronics`,
-    description: product.shortDescription.en,
+    title: `${product.name.bn} | Shiv Shakti Electronics Cooper's Camp`,
+    description: product.shortDescription.bn,
     alternates: {
-      canonical: `https://shivshaktielectronics.com/en/product/${product.slug}`,
+      canonical: `https://shivshaktielectronics.com/product/${product.slug}`,
       languages: {
         'bn-IN': `https://shivshaktielectronics.com/product/${product.slug}`,
         'en-IN': `https://shivshaktielectronics.com/en/product/${product.slug}`,
@@ -34,7 +34,7 @@ export async function generateMetadata({ params }: EnglishProductPageProps): Pro
   };
 }
 
-export default async function EnglishProductPage({ params }: EnglishProductPageProps) {
+export default async function ProductPage({ params }: ProductPageProps) {
   const { slug } = await params;
   const product = products.find((p) => p.slug === slug);
 
@@ -42,5 +42,5 @@ export default async function EnglishProductPage({ params }: EnglishProductPageP
     notFound();
   }
 
-  return <ProductDetailView product={product} lang="en" />;
+  return <ProductDetailView product={product} lang="bn" />;
 }

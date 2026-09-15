@@ -25,22 +25,22 @@ export const Header: React.FC<HeaderProps> = ({ lang }) => {
   // Compute language toggle destination URL
   const getLanguageToggleUrl = (targetLang: Language) => {
     if (targetLang === 'bn') {
-      // remove /en prefix
-      if (pathname.startsWith('/en')) {
-        const withoutEn = pathname.replace(/^\/en/, '');
-        return withoutEn === '' ? '/' : withoutEn;
-      }
-      return pathname;
-    } else {
-      // add /en prefix
-      if (pathname.startsWith('/en')) {
+      // add /bn prefix
+      if (pathname.startsWith('/bn')) {
         return pathname;
       }
-      return pathname === '/' ? '/en' : `/en${pathname}`;
+      return pathname === '/' ? '/bn' : `/bn${pathname}`;
+    } else {
+      // remove /bn prefix
+      if (pathname.startsWith('/bn')) {
+        const withoutBn = pathname.replace(/^\/bn/, '');
+        return withoutBn === '' ? '/' : withoutBn;
+      }
+      return pathname;
     }
   };
 
-  const navPrefix = lang === 'en' ? '/en' : '';
+  const navPrefix = lang === 'bn' ? '/bn' : '';
 
   return (
     <header className="sticky top-0 z-40 bg-white shadow-sm border-b border-slate-100">

@@ -16,7 +16,7 @@ interface HeroSectionProps {
 
 export const HeroSection: React.FC<HeroSectionProps> = ({ lang }) => {
   const dict = getDictionary(lang);
-  const navPrefix = lang === 'en' ? '/en' : '';
+  const navPrefix = lang === 'bn' ? '/bn' : '';
 
   return (
     <section className="relative overflow-hidden bg-gradient-to-b from-slate-50 via-white to-blue-50/30 pt-6 pb-12 sm:pt-10 sm:pb-16 border-b border-slate-100">

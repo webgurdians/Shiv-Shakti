@@ -16,7 +16,7 @@ interface ProductCardProps {
 
 export const ProductCard: React.FC<ProductCardProps> = ({ product, lang }) => {
   const dict = getDictionary(lang);
-  const navPrefix = lang === 'en' ? '/en' : '';
+  const navPrefix = lang === 'bn' ? '/bn' : '';
 
   // Extract key specs for quick snippet display
   const keySpecs = product.specs?.[0]?.items?.slice(0, 3) || [];

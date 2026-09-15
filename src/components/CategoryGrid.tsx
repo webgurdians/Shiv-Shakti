@@ -24,7 +24,7 @@ const iconMap: Record<ProductCategory, React.ReactNode> = {
 
 export const CategoryGrid: React.FC<CategoryGridProps> = ({ lang }) => {
   const dict = getDictionary(lang);
-  const navPrefix = lang === 'en' ? '/en' : '';
+  const navPrefix = lang === 'bn' ? '/bn' : '';
 
   return (
     <section className="py-12 bg-white">

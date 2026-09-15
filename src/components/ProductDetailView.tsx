@@ -36,7 +36,7 @@ interface ProductDetailViewProps {
 
 export const ProductDetailView: React.FC<ProductDetailViewProps> = ({ product, lang }) => {
   const dict = getDictionary(lang);
-  const navPrefix = lang === 'en' ? '/en' : '';
+  const navPrefix = lang === 'bn' ? '/bn' : '';
   const [activeImageIdx, setActiveImageIdx] = useState(0);
   const [copied, setCopied] = useState(false);
 

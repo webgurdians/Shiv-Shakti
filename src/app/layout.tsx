@@ -3,9 +3,9 @@ import './globals.css';
 import { getLocalBusinessJsonLd } from '@/lib/seo';
 
 export const metadata: Metadata = {
-  title: 'শিব শক্তি ইলেকট্রনিক্স অ্যান্ড ফার্নিচার | Cooper\'s Camp, Nadia',
+  title: 'Shiv Shakti Electronics & Furniture | Cooper\'s Camp, Nadia',
   description:
-    'কুপার্স ক্যাম্পের বিশ্বস্ত ইলেকট্রনিক্স ও ফার্নিচার শোরুম। স্যামসাং, এলজি, ভোল্টাস টিভি, ফ্রিজ, এসি, ওয়াশিং মেশিন ও আসবাবপত্র সহজ কিস্তিতে।',
+    'Trusted electronics & furniture showroom in Cooper\'s Camp, Nadia. Smart TVs, Inverter ACs, Refrigerators, Washing Machines & Furniture with easy zero down-payment EMI.',
   keywords: [
     'Shiv Shakti Electronics',
     'Electronics showroom Coopers Camp',
@@ -34,14 +34,14 @@ export const metadata: Metadata = {
         alt: 'Shiv Shakti Electronics and Furniture Showroom',
       },
     ],
-    locale: 'bn_IN',
+    locale: 'en_IN',
     type: 'website',
   },
   alternates: {
     canonical: 'https://shivshaktielectronics.com',
     languages: {
-      'bn-IN': 'https://shivshaktielectronics.com',
-      'en-IN': 'https://shivshaktielectronics.com/en',
+      'en-IN': 'https://shivshaktielectronics.com',
+      'bn-IN': 'https://shivshaktielectronics.com/bn',
     },
   },
 };
@@ -61,7 +61,7 @@ export default function RootLayout({
   const localBusinessJson = getLocalBusinessJsonLd();
 
   return (
-    <html lang="bn" className="scroll-smooth">
+    <html lang="en" className="scroll-smooth">
       <head>
         <meta name="google" content="notranslate" />
         <script

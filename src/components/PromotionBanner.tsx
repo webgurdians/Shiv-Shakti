@@ -18,7 +18,7 @@ export const PromotionBanner: React.FC<PromotionBannerProps> = ({ lang }) => {
   // If promotion is expired or none active, return null
   if (!promo) return null;
 
-  const navPrefix = lang === 'en' ? '/en' : '';
+  const navPrefix = lang === 'bn' ? '/bn' : '';
 
   return (
     <section className="py-6 bg-slate-50">

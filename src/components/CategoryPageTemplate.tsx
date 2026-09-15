@@ -23,7 +23,7 @@ export const CategoryPageTemplate: React.FC<CategoryPageTemplateProps> = ({
   lang,
 }) => {
   const dict = getDictionary(lang);
-  const navPrefix = lang === 'en' ? '/en' : '';
+  const navPrefix = lang === 'bn' ? '/bn' : '';
 
   const category = categories.find((c) => c.slug === categorySlug);
   const isAll = categorySlug === 'products';

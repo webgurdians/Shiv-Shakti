@@ -15,8 +15,8 @@ import { getDictionary } from '@/data/dictionary';
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 
-export default function BengaliHomePage() {
-  const lang = 'bn';
+export default function EnglishHomePage() {
+  const lang = 'en';
   const dict = getDictionary(lang);
   const featuredProducts = products.filter((p) => p.featured);
 
@@ -24,16 +24,10 @@ export default function BengaliHomePage() {
     <>
       <Header lang={lang} />
       <main className="flex-grow">
-        {/* 1. Hero Section */}
         <HeroSection lang={lang} />
-
-        {/* 2. Product Categories */}
         <CategoryGrid lang={lang} />
-
-        {/* 3. Live Festival Promotions Banner */}
         <PromotionBanner lang={lang} />
 
-        {/* 4. Featured Products Showroom Showcase */}
         <section className="py-14 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-8 gap-4">
@@ -58,7 +52,6 @@ export default function BengaliHomePage() {
               </Link>
             </div>
 
-            {/* Product Cards Grid */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
               {featuredProducts.map((product) => (
                 <ProductCard key={product.id} product={product} lang={lang} />
@@ -67,16 +60,9 @@ export default function BengaliHomePage() {
           </div>
         </section>
 
-        {/* 5. Finance and EMI Section */}
         <FinanceSection lang={lang} />
-
-        {/* 6. Why Visit Shiv Shakti */}
         <WhyUsSection lang={lang} />
-
-        {/* 7. Google Reviews */}
         <ReviewsSection lang={lang} />
-
-        {/* 8. Showroom Location & Google Maps */}
         <StoreLocationSection lang={lang} />
       </main>
 

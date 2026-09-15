@@ -23,7 +23,7 @@ export const OffersView: React.FC<OffersViewProps> = ({
   lang,
 }) => {
   const dict = getDictionary(lang);
-  const navPrefix = lang === 'en' ? '/en' : '';
+  const navPrefix = lang === 'bn' ? '/bn' : '';
 
   // Products eligible for current campaign if viewing a specific promotion
   const campaignProducts = currentPromotion

@@ -4,7 +4,7 @@ import { Metadata } from 'next';
 import { OffersView } from '@/components/OffersView';
 import { promotions, getActivePromotions } from '@/data/promotions';
 
-interface OfferCampaignPageProps {
+interface EnglishOfferCampaignPageProps {
   params: Promise<{
     slug: string;
   }>;
@@ -16,18 +16,18 @@ export async function generateStaticParams() {
   }));
 }
 
-export async function generateMetadata({ params }: OfferCampaignPageProps): Promise<Metadata> {
+export async function generateMetadata({ params }: EnglishOfferCampaignPageProps): Promise<Metadata> {
   const { slug } = await params;
   const promo = promotions.find((p) => p.slug === slug);
   if (!promo) return {};
 
   return {
-    title: `${promo.title.bn} | Shiv Shakti Electronics Cooper's Camp`,
-    description: promo.description.bn,
+    title: `${promo.title.en} | Shiv Shakti Electronics Cooper's Camp`,
+    description: promo.description.en,
   };
 }
 
-export default async function OfferCampaignPage({ params }: OfferCampaignPageProps) {
+export default async function EnglishOfferCampaignPage({ params }: EnglishOfferCampaignPageProps) {
   const { slug } = await params;
   const promo = promotions.find((p) => p.slug === slug);
 
@@ -36,5 +36,5 @@ export default async function OfferCampaignPage({ params }: OfferCampaignPagePro
   }
 
   const allPromos = getActivePromotions();
-  return <OffersView promotions={allPromos} currentPromotion={promo} lang="bn" />;
+  return <OffersView promotions={allPromos} currentPromotion={promo} lang="en" />;
 }
