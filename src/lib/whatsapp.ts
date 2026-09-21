@@ -16,8 +16,6 @@ interface WhatsAppLeadOptions {
 export function getWhatsAppLeadUrl({
   product,
   lang = 'bn',
-  campaign,
-  source = 'showroom-web',
   customMessage,
 }: WhatsAppLeadOptions): string {
   const phone = shopInfo.whatsapp;
@@ -27,15 +25,13 @@ export function getWhatsAppLeadUrl({
   }
 
   if (product) {
-    // Standard showroom product representation (e.g. Samsung 55" 4K TV)
-    const productTitle = product.name.en;
-    const campTag = campaign ? ` | Campaign: ${campaign}` : '';
+    const productTitle = product.name[lang] || product.name.en;
 
     if (lang === 'bn') {
-      const msg = `নমস্কার, Shiv Shakti Electronics & Furniture-এর ওয়েবসাইটে ${productTitle} দেখলাম। আজকের দাম এবং EMI option জানতে চাই। [Ref: ${product.id}${campTag} | Src: ${source}]`;
+      const msg = `নমস্কার! শিব শক্তি শোরুমের ওয়েবসাইটে "${productTitle}" প্রোডাক্টটি দেখলাম। আজকের সেরা দাম ও সহজ কিস্তি (EMI) সুবিধা সম্পর্কে বিস্তারিত জানতে চাই।`;
       return `https://wa.me/${phone}?text=${encodeURIComponent(msg)}`;
     } else {
-      const msg = `Hi, I saw the ${productTitle} on the Shiv Shakti website. Please share today's best price and available EMI options. [Ref: ${product.id}${campTag} | Src: ${source}]`;
+      const msg = `Hello! I saw "${product.name.en}" on the Shiv Shakti website. Please share today's best price and available EMI options.`;
       return `https://wa.me/${phone}?text=${encodeURIComponent(msg)}`;
     }
   }
@@ -43,8 +39,8 @@ export function getWhatsAppLeadUrl({
   // Generic showroom inquiry
   const defaultMsg =
     lang === 'bn'
-      ? `নমস্কার, Shiv Shakti Electronics & Furniture (কুপার্স ক্যাম্প শোরুম)-এর বর্তমান অফার ও দাম জানতে চাই। [Src: ${source}]`
-      : `Hello, I would like to inquire about products and latest offers at Shiv Shakti Electronics & Furniture (Cooper's Camp). [Src: ${source}]`;
+      ? `নমস্কার! শিব শক্তি ইলেকট্রনিক্স অ্যান্ড ফার্নিচার শোরুমের প্রোডাক্ট ও আজকের সেরা অফার সম্পর্কে জানতে চাই।`
+      : `Hello! I would like to inquire about products and latest offers at Shiv Shakti Electronics and Furniture (Coopers Camp).`;
 
   return `https://wa.me/${phone}?text=${encodeURIComponent(defaultMsg)}`;
 }
