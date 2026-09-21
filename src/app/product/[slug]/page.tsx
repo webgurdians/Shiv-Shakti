@@ -22,7 +22,7 @@ export async function generateMetadata({ params }: EnglishProductPageProps): Pro
   if (!product) return {};
 
   return {
-    title: `${product.name.en} in Cooper's Camp | Shiv Shakti Electronics`,
+    title: `${product.name.en} in Coopers Camp | Shiv Shakti Electronics`,
     description: product.shortDescription.en,
     alternates: {
       canonical: `https://www.shivshaktielectronics.com/product/${product.slug}`,

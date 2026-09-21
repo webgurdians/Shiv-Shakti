@@ -22,8 +22,8 @@ export async function generateMetadata({ params }: EnglishCategoryPageProps): Pr
   if (!category) return {};
 
   return {
-    title: `${category.name.en} Showroom in Cooper's Camp | Shiv Shakti Electronics`,
-    description: `Shop genuine ${category.name.en} in Cooper's Camp, Nadia with official warranty, easy zero downpayment EMI, and prompt delivery.`,
+    title: `${category.name.en} Showroom in Coopers Camp | Shiv Shakti Electronics`,
+    description: `Shop genuine ${category.name.en} in Coopers Camp, Nadia with official warranty, easy zero downpayment EMI, and prompt delivery.`,
   };
 }
 

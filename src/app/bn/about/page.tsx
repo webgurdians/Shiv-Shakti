@@ -2,7 +2,7 @@ import React from 'react';
 import { AboutView } from '@/components/AboutView';
 
 export const metadata = {
-  title: 'আমাদের সম্পর্কে | Shiv Shakti Electronics & Furniture Cooper\'s Camp',
+  title: 'আমাদের সম্পর্কে | Shiv Shakti Electronics and Furniture Coopers Camp',
   description: 'কুপার্স ক্যাম্পের বিশ্বস্ত ইলেকট্রনিক্স ও ফার্নিচার শোরুম শিব শক্তির পরিচিতি ও সেবামূলক নীতি।',
 };
 

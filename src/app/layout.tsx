@@ -3,9 +3,9 @@ import './globals.css';
 import { getLocalBusinessJsonLd } from '@/lib/seo';
 
 export const metadata: Metadata = {
-  title: 'Shiv Shakti Electronics & Furniture | Cooper\'s Camp, Nadia',
+  title: 'Shiv Shakti Electronics and Furniture | Coopers Camp, Nadia',
   description:
-    'Trusted electronics & furniture showroom in Cooper\'s Camp, Nadia. Smart TVs, Inverter ACs, Refrigerators, Washing Machines & Furniture with easy zero down-payment EMI.',
+    'Trusted electronics and furniture showroom in Coopers Camp, Nadia. Smart TVs, Inverter ACs, Refrigerators, Washing Machines, and Furniture with easy zero down-payment EMI.',
   keywords: [
     'Shiv Shakti Electronics',
     'Electronics showroom Coopers Camp',
@@ -15,17 +15,17 @@ export const metadata: Metadata = {
     'Bajaj Finserv EMI showroom Nadia',
     'শিব শক্তি ইলেকট্রনিক্স',
   ],
-  authors: [{ name: 'Shiv Shakti Electronics & Furniture' }],
+  authors: [{ name: 'Shiv Shakti Electronics and Furniture' }],
   icons: {
     icon: '/images/logo.jpg',
     apple: '/images/logo.jpg',
   },
   openGraph: {
-    title: 'Shiv Shakti Electronics & Furniture — Cooper\'s Camp',
+    title: 'Shiv Shakti Electronics and Furniture - Coopers Camp',
     description:
-      'Explore top brand Smart TVs, Inverter ACs, Refrigerators and Furniture in Cooper\'s Camp, Nadia with instant EMI.',
+      'Explore top brand Smart TVs, Inverter ACs, Refrigerators and Furniture in Coopers Camp, Nadia with instant EMI.',
     url: 'https://www.shivshaktielectronics.com',
-    siteName: 'Shiv Shakti Electronics & Furniture',
+    siteName: 'Shiv Shakti Electronics and Furniture',
     images: [
       {
         url: 'https://www.shivshaktielectronics.com/images/logo.jpg',

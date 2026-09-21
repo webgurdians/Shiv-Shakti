@@ -22,7 +22,7 @@ export async function generateMetadata({ params }: EnglishOfferCampaignPageProps
   if (!promo) return {};
 
   return {
-    title: `${promo.title.en} | Shiv Shakti Electronics Cooper's Camp`,
+    title: `${promo.title.en} | Shiv Shakti Electronics Coopers Camp`,
     description: promo.description.en,
   };
 }
