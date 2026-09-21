@@ -34,16 +34,16 @@ export const shopInfo: ShopInfo = {
     en: '9:00 AM – 10:00 PM (Open Every Day)',
   },
   googleMapsEmbedUrl:
-    'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3665.05!2d88.58225!3d23.163562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDA5JzQ4LjgiTiA4OMKwMzUnMDQuMCJF!5e0!3m2!1sen!2sin!4v1710000000000!5m2!1sen!2sin',
+    'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3665.0449480665795!2d88.58181947594954!3d23.163599179074095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f8c5005e0534ab%3A0x193100c331dba552!2sShiv%20Shakti%20Electronic%20and%20Furniture!5e0!3m2!1sen!2sin!4v1710000000000!5m2!1sen!2sin',
   googleMapsDirectionsUrl:
-    'https://www.google.com/maps/dir/?api=1&destination=23.163562,88.584438',
+    'https://www.google.com/maps/dir/?api=1&destination=Shiv+Shakti+Electronic+and+Furniture&destination_place_id=ChIJqzQFXgDF-DkRUqXbMcMAMRk',
   googleReviewUrl:
-    'https://search.google.com/local/writereview?placeid=ChIJcdDq5uPl-DkRwWUOZzH96ms',
+    'https://search.google.com/local/writereview?placeid=ChIJqzQFXgDF-DkRUqXbMcMAMRk',
   gstin: '19AUWPM0358D1ZA',
   plusCode: '5H7M+CQ Cooper\'s Camp, West Bengal',
   coordinates: {
-    latitude: 23.163562,
-    longitude: 88.584438,
+    latitude: 23.163599,
+    longitude: 88.584394,
   },
   authorizedBrands: [
     'Samsung',

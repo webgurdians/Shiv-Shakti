@@ -117,7 +117,7 @@ export const StoreLocationSection: React.FC<StoreLocationSectionProps> = ({ lang
                       {lang === 'bn' ? 'সরাসরি জিপিএস লোকেশন ও প্লাস কোড:' : 'GPS Coordinates & Plus Code:'}
                     </div>
                     <div className="text-sky-200 text-xs font-mono mt-0.5">
-                      23.163562° N, 88.584438° E
+                      23.1636° N, 88.5844° E
                     </div>
                     <div className="text-slate-300 text-xs mt-0.5">
                       Plus Code: <span className="text-festival-gold font-semibold">{shopInfo.plusCode}</span>
@@ -193,7 +193,7 @@ export const StoreLocationSection: React.FC<StoreLocationSectionProps> = ({ lang
                   Shiv Shakti Electronic and Furniture
                 </div>
                 <div className="text-[11px] text-slate-500 font-mono">
-                  23.163562° N, 88.584438° E • {shopInfo.plusCode}
+                  23.1636° N, 88.5844° E • {shopInfo.plusCode}
                 </div>
               </div>
               <a
