@@ -34,7 +34,7 @@ export const shopInfo: ShopInfo = {
     en: '9:00 AM – 10:00 PM (Open Every Day)',
   },
   googleMapsEmbedUrl:
-    'https://maps.google.com/maps?q=Shiv+Shakti+Electronic+and+Furniture+23.163562,88.584438&hl=en&z=17&output=embed',
+    'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3665.05!2d88.58225!3d23.163562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDA5JzQ4LjgiTiA4OMKwMzUnMDQuMCJF!5e0!3m2!1sen!2sin!4v1710000000000!5m2!1sen!2sin',
   googleMapsDirectionsUrl:
     'https://www.google.com/maps/dir/?api=1&destination=23.163562,88.584438',
   googleReviewUrl:

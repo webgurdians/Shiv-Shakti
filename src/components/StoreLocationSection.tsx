@@ -180,16 +180,16 @@ export const StoreLocationSection: React.FC<StoreLocationSectionProps> = ({ lang
               height="100%"
               style={{ border: 0, minHeight: '420px' }}
               allowFullScreen={true}
-              loading="lazy"
+              loading="eager"
               referrerPolicy="no-referrer-when-downgrade"
               title="Shiv Shakti Electronic and Furniture Google Maps Location"
               className="w-full h-full flex-1"
             />
             {/* Quick Floating Directions Pill */}
-            <div className="absolute bottom-4 right-4 bg-white/95 backdrop-blur-sm p-3.5 rounded-2xl shadow-xl border border-slate-200 hidden sm:flex items-center gap-3">
+            <div className="absolute bottom-4 right-4 bg-white/95 backdrop-blur-sm p-3 sm:p-3.5 rounded-2xl shadow-xl border border-slate-200 flex items-center gap-3">
               <div>
                 <div className="text-xs font-bold text-slate-800 flex items-center gap-1.5">
-                  <span className="w-2 h-2 rounded-full bg-emerald-500"></span>
+                  <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
                   Shiv Shakti Electronic and Furniture
                 </div>
                 <div className="text-[11px] text-slate-500 font-mono">
