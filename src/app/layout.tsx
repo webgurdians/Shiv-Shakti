@@ -44,6 +44,9 @@ export const metadata: Metadata = {
       'bn-IN': 'https://www.shivshaktielectronics.com/bn',
     },
   },
+  verification: {
+    google: 'KFoymVAN3vZEgAN6vM7kDfCY-mMV1Nv8BBqkJidPfSc',
+  },
 };
 
 export const viewport: Viewport = {
