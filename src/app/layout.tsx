@@ -24,11 +24,11 @@ export const metadata: Metadata = {
     title: 'Shiv Shakti Electronics & Furniture — Cooper\'s Camp',
     description:
       'Explore top brand Smart TVs, Inverter ACs, Refrigerators and Furniture in Cooper\'s Camp, Nadia with instant EMI.',
-    url: 'https://shivshaktielectronics.com',
+    url: 'https://www.shivshaktielectronics.com',
     siteName: 'Shiv Shakti Electronics & Furniture',
     images: [
       {
-        url: 'https://shivshaktielectronics.com/images/logo.jpg',
+        url: 'https://www.shivshaktielectronics.com/images/logo.jpg',
         width: 1024,
         height: 1024,
         alt: 'Shiv Shakti Electronics and Furniture Showroom',
@@ -38,10 +38,10 @@ export const metadata: Metadata = {
     type: 'website',
   },
   alternates: {
-    canonical: 'https://shivshaktielectronics.com',
+    canonical: 'https://www.shivshaktielectronics.com',
     languages: {
-      'en-IN': 'https://shivshaktielectronics.com',
-      'bn-IN': 'https://shivshaktielectronics.com/bn',
+      'en-IN': 'https://www.shivshaktielectronics.com',
+      'bn-IN': 'https://www.shivshaktielectronics.com/bn',
     },
   },
 };

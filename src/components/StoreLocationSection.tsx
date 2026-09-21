@@ -110,6 +110,20 @@ export const StoreLocationSection: React.FC<StoreLocationSectionProps> = ({ lang
                     </div>
                   </div>
                 </div>
+                <div className="flex items-start gap-3 pt-2 border-t border-white/10">
+                  <Navigation className="w-5 h-5 text-sky-400 shrink-0 mt-0.5" />
+                  <div>
+                    <div className="font-bold text-white">
+                      {lang === 'bn' ? 'সরাসরি জিপিএস লোকেশন ও প্লাস কোড:' : 'GPS Coordinates & Plus Code:'}
+                    </div>
+                    <div className="text-sky-200 text-xs font-mono mt-0.5">
+                      23.163562° N, 88.584438° E
+                    </div>
+                    <div className="text-slate-300 text-xs mt-0.5">
+                      Plus Code: <span className="text-festival-gold font-semibold">{shopInfo.plusCode}</span>
+                    </div>
+                  </div>
+                </div>
               </div>
 
               {/* Key Trust Checkmarks */}
@@ -122,6 +136,15 @@ export const StoreLocationSection: React.FC<StoreLocationSectionProps> = ({ lang
                   <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
                   <span>{lang === 'bn' ? 'ক্যাশ, ইউপিআই, কার্ড ও ইএমআই সুবিধা' : 'Cash, UPI, Cards, and Instant EMI accepted'}</span>
                 </div>
+                {shopInfo.gstin && (
+                  <div className="flex items-center gap-2">
+                    <CheckCircle2 className="w-4 h-4 text-festival-gold shrink-0" />
+                    <span>
+                      {lang === 'bn' ? 'সরকারি নিবন্ধিত শোরুম — GSTIN: ' : 'Govt. Registered Showroom — GSTIN: '}
+                      <strong className="font-mono text-white tracking-wider font-semibold">{shopInfo.gstin}</strong>
+                    </span>
+                  </div>
+                )}
               </div>
             </div>
 
@@ -150,29 +173,34 @@ export const StoreLocationSection: React.FC<StoreLocationSectionProps> = ({ lang
           </div>
 
           {/* Embedded Interactive Google Map */}
-          <div className="lg:col-span-7 bg-slate-100 rounded-3xl overflow-hidden shadow-lg border border-slate-200 min-h-[380px] relative">
+          <div className="lg:col-span-7 bg-slate-100 rounded-3xl overflow-hidden shadow-lg border border-slate-200 min-h-[420px] relative flex flex-col">
             <iframe
               src={shopInfo.googleMapsEmbedUrl}
               width="100%"
               height="100%"
-              style={{ border: 0, minHeight: '380px' }}
-              allowFullScreen={false}
+              style={{ border: 0, minHeight: '420px' }}
+              allowFullScreen={true}
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Shiv Shakti Electronics & Furniture Location"
-              className="w-full h-full"
+              title="Shiv Shakti Electronic and Furniture Google Maps Location"
+              className="w-full h-full flex-1"
             />
             {/* Quick Floating Directions Pill */}
-            <div className="absolute bottom-4 right-4 bg-white/95 backdrop-blur-sm p-3 rounded-2xl shadow-lg border border-slate-200 hidden sm:flex items-center gap-3">
+            <div className="absolute bottom-4 right-4 bg-white/95 backdrop-blur-sm p-3.5 rounded-2xl shadow-xl border border-slate-200 hidden sm:flex items-center gap-3">
               <div>
-                <div className="text-xs font-bold text-slate-800">Cooper's Camp 741232</div>
-                <div className="text-[11px] text-slate-500">Nadia, West Bengal</div>
+                <div className="text-xs font-bold text-slate-800 flex items-center gap-1.5">
+                  <span className="w-2 h-2 rounded-full bg-emerald-500"></span>
+                  Shiv Shakti Electronic and Furniture
+                </div>
+                <div className="text-[11px] text-slate-500 font-mono">
+                  23.163562° N, 88.584438° E • {shopInfo.plusCode}
+                </div>
               </div>
               <a
                 href={shopInfo.googleMapsDirectionsUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-shiv-blue hover:bg-shiv-blue-hover text-white text-xs font-bold px-3 py-1.5 rounded-xl shadow-xs transition"
+                className="bg-shiv-blue hover:bg-shiv-blue-hover text-white text-xs font-bold px-3 py-1.5 rounded-xl shadow-xs transition shrink-0"
               >
                 Google Maps
               </a>

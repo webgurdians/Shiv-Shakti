@@ -7,6 +7,7 @@ import { ProductCard } from '@/components/ProductCard';
 import { FinanceSection } from '@/components/FinanceSection';
 import { WhyUsSection } from '@/components/WhyUsSection';
 import { ReviewsSection } from '@/components/ReviewsSection';
+import { AeoDirectAnswers } from '@/components/AeoDirectAnswers';
 import { StoreLocationSection } from '@/components/StoreLocationSection';
 import { Footer } from '@/components/Footer';
 import { StickyBottomBar } from '@/components/StickyBottomBar';
@@ -63,6 +64,7 @@ export default function EnglishHomePage() {
         <FinanceSection lang={lang} />
         <WhyUsSection lang={lang} />
         <ReviewsSection lang={lang} />
+        <AeoDirectAnswers lang={lang} />
         <StoreLocationSection lang={lang} />
       </main>
 

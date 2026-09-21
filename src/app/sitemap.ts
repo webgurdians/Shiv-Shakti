@@ -4,7 +4,7 @@ import { categories } from '@/data/categories';
 import { promotions } from '@/data/promotions';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://shivshaktielectronics.com';
+  const baseUrl = 'https://www.shivshaktielectronics.com';
   const lastModified = new Date();
 
   const routes: MetadataRoute.Sitemap = [

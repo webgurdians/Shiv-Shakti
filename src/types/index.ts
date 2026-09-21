@@ -106,6 +106,15 @@ export interface ShopInfo {
   googleMapsEmbedUrl: string;
   googleMapsDirectionsUrl: string;
   googleReviewUrl: string;
+  gstin?: string;
+  plusCode?: string;
+  coordinates?: {
+    latitude: number;
+    longitude: number;
+  };
+  authorizedBrands?: string[];
+  deliveryCoverage?: LocalizedString;
+  warrantyGuarantee?: LocalizedString;
   financePartners: {
     name: string;
     logo?: string;

@@ -30,42 +30,74 @@ export const shopInfo: ShopInfo = {
   whatsapp: '916294762684',
   displayWhatsapp: '+91 62947 62684',
   timings: {
-    bn: 'সকাল ১০টা – রাত ১০টা (প্রতিদিন খোলা)',
-    en: '10:00 AM – 10:00 PM (Open Every Day)',
+    bn: 'সকাল ৯টা – রাত ১০টা (প্রতিদিন খোলা)',
+    en: '9:00 AM – 10:00 PM (Open Every Day)',
   },
   googleMapsEmbedUrl:
-    'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14660.10656094628!2d88.5414!3d23.2386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f8e5616f73db13%3A0x6b09322b647ef5c1!2sCoopers%20Camp%2C%20West%20Bengal%20741232!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin',
+    'https://maps.google.com/maps?q=Shiv+Shakti+Electronic+and+Furniture+23.163562,88.584438&hl=en&z=17&output=embed',
   googleMapsDirectionsUrl:
-    'https://www.google.com/maps/dir/?api=1&destination=Coopers+Camp+Nadia+West+Bengal+741232',
+    'https://www.google.com/maps/dir/?api=1&destination=23.163562,88.584438',
   googleReviewUrl:
     'https://search.google.com/local/writereview?placeid=ChIJcdDq5uPl-DkRwWUOZzH96ms',
+  gstin: '19AUWPM0358D1ZA',
+  plusCode: '5H7M+CQ Cooper\'s Camp, West Bengal',
+  coordinates: {
+    latitude: 23.163562,
+    longitude: 88.584438,
+  },
+  authorizedBrands: [
+    'Samsung',
+    'LG',
+    'Haier',
+    'Hitachi',
+    'Panasonic',
+    'Apple',
+    'Whirlpool',
+    'Godrej',
+    'Voltas',
+  ],
+  deliveryCoverage: {
+    bn: 'রানাঘাট মহকুমা ও কুপার্স ক্যাম্প এলাকা জুড়ে বিনামূল্যে দ্রুত হোম ডেলিভারি',
+    en: 'Free local delivery across Ranaghat area & Cooper\'s Camp region',
+  },
+  warrantyGuarantee: {
+    bn: 'সকল পণ্য ১০০% আসল এবং ব্র্যান্ডের অফিসিয়াল ম্যানুফ্যাকচারার ওয়ারেন্টি সহ',
+    en: 'All products covered by official brand warranty with direct service support',
+  },
   financePartners: [
     {
       name: 'Bajaj Finserv',
       description: {
-        bn: 'সহজ কিস্তিতে পণ্য নেওয়ার সুযোগ (যোগ্যতা সাপেক্ষে)',
-        en: 'Easy installment plans available on eligible purchases',
-      },
-    },
-    {
-      name: 'HDB Financial Services',
-      description: {
-        bn: 'ন্যূনতম কাগজপত্রে দ্রুত ঋণ অনুমোদন',
-        en: 'Instant loan approval with minimal documentation',
-      },
-    },
-    {
-      name: 'TVS Credit',
-      description: {
-        bn: 'হোম অ্যাপ্লায়েন্স ও আসবাবপত্রে বিশেষ ফাইন্যান্স',
-        en: 'Tailored finance for home appliances and furniture',
+        bn: 'জিরো ডাউন পেমেন্ট ও সহজ কিস্তিতে পণ্য নেওয়ার সেরা সুবিধা',
+        en: 'Zero down payment & zero interest EMI options available',
       },
     },
     {
       name: 'IDFC FIRST Bank',
       description: {
-        bn: 'সহজ ডিজিটাল কিস্তি সুবিধা',
-        en: 'Hassle-free digital consumer durable finance',
+        bn: 'জিরো ডাউন পেমেন্ট ও সহজ ডিজিটাল কিস্তি অনুমোদন',
+        en: 'Zero down payment instant digital loan approval',
+      },
+    },
+    {
+      name: 'TVS Credit',
+      description: {
+        bn: 'জিরো ডাউন পেমেন্টে হোম অ্যাপ্লায়েন্স ও আসবাবপত্রে বিশেষ ফাইন্যান্স',
+        en: 'Zero down payment tailored finance for appliances and furniture',
+      },
+    },
+    {
+      name: 'Chola (Cholamandalam Finance)',
+      description: {
+        bn: 'চোলা ফাইন্যান্সের মাধ্যমে জিরো ডাউন পেমেন্ট ও সহজ কিস্তি সুবিধা',
+        en: 'Zero down payment consumer finance schemes with Chola',
+      },
+    },
+    {
+      name: 'HDB Financial Services',
+      description: {
+        bn: 'ন্যূনতম কাগজপত্রে দ্রুত ঋণ অনুমোদন ও নমনীয় কিস্তি',
+        en: 'Instant loan approval with minimal documentation and flexible tenure',
       },
     },
   ],

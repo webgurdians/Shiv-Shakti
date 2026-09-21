@@ -7,6 +7,7 @@ import { ProductCard } from '@/components/ProductCard';
 import { FinanceSection } from '@/components/FinanceSection';
 import { WhyUsSection } from '@/components/WhyUsSection';
 import { ReviewsSection } from '@/components/ReviewsSection';
+import { AeoDirectAnswers } from '@/components/AeoDirectAnswers';
 import { StoreLocationSection } from '@/components/StoreLocationSection';
 import { Footer } from '@/components/Footer';
 import { StickyBottomBar } from '@/components/StickyBottomBar';
@@ -76,7 +77,10 @@ export default function BengaliHomePage() {
         {/* 7. Google Reviews */}
         <ReviewsSection lang={lang} />
 
-        {/* 8. Showroom Location & Google Maps */}
+        {/* 8. Direct Answers & FAQ for AEO/GEO */}
+        <AeoDirectAnswers lang={lang} />
+
+        {/* 9. Showroom Location & Google Maps */}
         <StoreLocationSection lang={lang} />
       </main>
 

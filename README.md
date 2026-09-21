@@ -63,8 +63,17 @@ npm start
 ## 📍 Store Information
 
 - **Name**: Shiv Shakti Electronics and Furniture
+- **Website**: [https://www.shivshaktielectronics.com](https://www.shivshaktielectronics.com)
 - **Address**: Near Riksha Stand More, Coopers Bazar, Cooper's Camp, Nadia, West Bengal – 741232
+- **Plus Code**: `5H7M+CQ Cooper's Camp, West Bengal` (Full: `7MMC5H7M+CQ`)
+- **GPS Coordinates**: `23.163562° N, 88.584438° E`
+- **Google Maps Pin**: [View on Google Maps](https://www.google.com/maps?q=23.163562,88.584438)
 - **Contact Numbers**:
   - Primary (Call & WhatsApp): `+91 62947 62684`
   - Secondary (Call): `+91 75011 90388`
-- **Hours**: Monday – Sunday: 10:00 AM – 10:00 PM
+- **Hours**: Monday – Sunday: 9:00 AM – 10:00 PM (Open Every Day)
+- **GSTIN**: `19AUWPM0358D1ZA` (Govt. Registered Enterprise, West Bengal)
+- **Authorized Brands**: Samsung, LG, Haier, Hitachi, Panasonic, Apple, Whirlpool, Godrej, Voltas
+- **Finance Partners**: Bajaj Finserv, IDFC FIRST Bank, TVS Credit, Chola with Zero Down Payment
+- **Delivery**: Free local delivery across Ranaghat area & Cooper's Camp region
+- **Warranty**: 100% Genuine with Official Brand Manufacturer Warranty

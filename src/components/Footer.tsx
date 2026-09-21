@@ -160,13 +160,22 @@ export const Footer: React.FC<FooterProps> = ({ lang }) => {
                   WhatsApp: {shopInfo.displayWhatsapp}
                 </a>
               </div>
+              {shopInfo.gstin && (
+                <div className="flex items-center gap-2 pt-1.5 border-t border-slate-800/80 text-[11px] text-slate-400">
+                  <ShieldCheck className="w-3.5 h-3.5 text-festival-gold shrink-0" />
+                  <span>GSTIN: <strong className="font-mono text-slate-200 tracking-wider font-semibold">{shopInfo.gstin}</strong></span>
+                </div>
+              )}
             </div>
           </div>
         </div>
 
         {/* Bottom Copyright */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
-          <div>{dict.footer.copyright}</div>
+          <div>
+            {dict.footer.copyright}
+            {shopInfo.gstin && <span className="hidden sm:inline"> • Govt. Regd GSTIN: {shopInfo.gstin}</span>}
+          </div>
           <div className="flex items-center gap-2">
             <span>{dict.footer.developedWith}</span>
           </div>

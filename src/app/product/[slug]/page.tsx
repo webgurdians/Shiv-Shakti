@@ -25,10 +25,10 @@ export async function generateMetadata({ params }: EnglishProductPageProps): Pro
     title: `${product.name.en} in Cooper's Camp | Shiv Shakti Electronics`,
     description: product.shortDescription.en,
     alternates: {
-      canonical: `https://shivshaktielectronics.com/en/product/${product.slug}`,
+      canonical: `https://www.shivshaktielectronics.com/product/${product.slug}`,
       languages: {
-        'bn-IN': `https://shivshaktielectronics.com/product/${product.slug}`,
-        'en-IN': `https://shivshaktielectronics.com/en/product/${product.slug}`,
+        'en-IN': `https://www.shivshaktielectronics.com/product/${product.slug}`,
+        'bn-IN': `https://www.shivshaktielectronics.com/bn/product/${product.slug}`,
       },
     },
   };
