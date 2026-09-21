@@ -48,9 +48,9 @@ export const Footer: React.FC<FooterProps> = ({ lang }) => {
               {dict.footer.aboutText}
             </p>
 
-            <div className="inline-block px-3 py-1 rounded-md bg-white/5 border border-white/10 text-[11px] text-shakti-red font-bold font-bengali">
-              {dict.tagline}
-            </div>
+            <p className="text-xs text-shakti-red font-bold italic tracking-wide">
+              — {dict.tagline} —
+            </p>
           </div>
 
           {/* Categories */}
@@ -106,11 +106,6 @@ export const Footer: React.FC<FooterProps> = ({ lang }) => {
               <li>
                 <Link href={`${navPrefix}/contact`} className="hover:text-white transition">
                   {dict.nav.contact}
-                </Link>
-              </li>
-              <li>
-                <Link href="/admin" className="text-slate-500 hover:text-slate-400 transition">
-                  {dict.nav.admin}
                 </Link>
               </li>
             </ul>

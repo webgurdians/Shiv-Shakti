@@ -15,10 +15,10 @@ export const shopInfo: ShopInfo = {
       en: 'Near Riksha Stand More, Coopers Bazar',
     },
     landmark: {
-      bn: 'কুপার্স ক্যাম্প, রানাঘাট মহকুমা',
-      en: 'Coopers Camp, Ranaghat Sub-Division',
+      bn: 'রানাঘাট মহকুমা',
+      en: 'Ranaghat Sub-Division',
     },
-    city: "Cooper's Camp",
+    city: 'Coopers Camp',
     pin: '741232',
     district: 'Nadia',
     state: 'West Bengal',
